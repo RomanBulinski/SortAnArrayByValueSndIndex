@@ -8,13 +8,8 @@ public class Main {
         for(int i =0; i<array.length; i++){
             treemap.put( array[i] * (i+1), array[i] );
         }
-        Object[] a = treemap.keySet().toArray();
-        List<Object> clist = new ArrayList<>();
-        for(int i = 0; i< a.length; i++){
-            clist.add( treemap.get(a[i]) );
-        }
-        return clist.stream().mapToInt(i -> (int) i).toArray();
-    }
+        return treemap.values().stream().mapToInt(i -> (int) i).toArray();
 
+    }
 
 }
