@@ -5,7 +5,6 @@ import static org.junit.jupiter.api.Assertions.assertArrayEquals;
 
 public class TestMain {
 
-
 //    @Test
 //    public void exampleTests() {
 //
@@ -35,7 +34,6 @@ public class TestMain {
 //        return Arrays.toString(array);
 //    }
 
-
     @Test
     public void exampleTests1() {
         int[] actual = Main.sortByValueAndIndex(new int[] { 23, 2, 3, 4, 5 });
@@ -49,7 +47,5 @@ public class TestMain {
         int[] expected = new int[] { 1, 9, 5, 3, 4  };
         assertArrayEquals(actual, expected);
     }
-
-
 
 }
